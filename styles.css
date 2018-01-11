@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#newStar {
+  position: fixed;
+  left: 10%;
+  bottom: 10%;
+
+  width: 40px;
+  height: 40px;
+
+  color: red;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  -webkit-transition: width 1s, height 1s; /* Safari */
+  transition: width 1s, height 1s;
+}
+
+#frameRateDiv {
+  position: fixed;
+  left:30px;
+  top:30px;
+  margin:0px;
+  color:red;
+  font-size:24px;
+}
+
+#newStar:hover {
+  width: 160px;
+  height: 160px;
+  display: block;
+}
+
+#newStar:hover > * {
+  display: inline-block;
+}
+
+#mySubmit {
+  display: none;
+  margin: 2px;
+  padding: 2px;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 2px;
+  padding: 2px;
+}

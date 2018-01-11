@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <div id="frameRateDiv"></div>
+  <div id="newStar">
+    <ul id="inputs1">
+      <li>Position:</li>
+      <li><input id="xPos" type="number" placeholder="x" step="10" min="-300" max="300" required></li>
+      <li><input id="yPos" type="number" placeholder="y" step="10" min="-300" max="300" required></li>
+      <li><input id="zPos" type="number" placeholder="z" step="10" min="-300" max="300" required></li>
+    </ul>
+    <ul id="inputs2">
+      <li>Velocity:</li>
+      <li><input id="xVel" type="number" placeholder="x" step="10" min="-50" max="50" required></li>
+      <li><input id="yVel" type="number" placeholder="y" step="10" min="-50" max="50" required></li>
+      <li><input id="zVel" type="number" placeholder="z" step="10" min="-50" max="50" required></li>
+    </ul>
+    <input type="submit" id="mySubmit" value="Create star" onclick="createCoordStar()">
+    <input type="submit" id="mySubmit" value="Create random star" onclick="createRandomStar()">
+  </div>
+</body>
+</html>
